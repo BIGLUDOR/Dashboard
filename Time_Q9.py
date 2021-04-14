@@ -246,8 +246,10 @@ fig.update_layout(
 st.plotly_chart(fig)
 
 left_col, right_col = st.beta_columns((2,1))
+right_col.write("## Exceptions Orders")
 right_col.write(df_except_tl)
 st.write("---")
+left_col.write("## Pivot table")
 left_col.write(df_pivot_table)
 
 

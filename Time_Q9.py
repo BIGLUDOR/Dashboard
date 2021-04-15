@@ -15,12 +15,12 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 #fuction to connect
 def get_sql():
     try:
-        conn = ibm_db_dbi.connect('DATABASE=q9test1;'
-                'HOSTNAME=mtelbrus.rchland.ibm.com;'  # 127.0.0.1 or localhost works if it's local
-                'PORT=50000;'
-                'PROTOCOL=TCPIP;'
-                'UID=testeng;'
-                'PWD=Data.Science4Test;', '', '')
+        conn = ibm_db_dbi.connect('DATABASE=;'
+                'HOSTNAME=;'  # 127.0.0.1 or localhost works if it's local
+                'PORT=;'
+                'PROTOCOL=;'
+                'UID=;'
+                'PWD=;', '', '')
     except:
         print("No connection:")
     else:
